@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 import { optionsArray } from "../optionsData";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Cards = ({ option, toChangecategory }) => {
+  const navigate = useNavigate();
   let style1 =
-    " bg-white hover:bg-blue-50 hover:text-blue-400 transition-color  duration-75 ";
+    " bg-white rounded-md hover:shadow-xl hover:shadow-blue-100 hover:-translate-y-2 transition-transform ease-in-out duration-500 ";
 
   let style2 =
-    "  bg-white text-blue-400  hover:text-black  transition-color duration-75 ";
+    "  bg-white text-blue-400  hover:text-black  transition-color duration-300 ";
 
   return (
-    <div className="rounded-sm   flex  flex-col gap-3  justify-between items-center md:grid md:grid-flow-col md:justify-start md:gap-6">
+    <div className="   flex  flex-col gap-3  justify-between items-center md:grid md:grid-flow-col duration  md:justify-start md:gap-6">
       {optionsArray
         .filter((item) => item.category === toChangecategory)
         .map((op) => {
-          const { id, title, imageurl, desc, url } = op;
+          const { id, title, imageurl, desc, url, longDesc, projectUrl } = op;
           return (
-            <Link
-              to={url}
-              className={`${option === 2 ? style2 : style1}+'  w-full   '`}
+            <div
+              onClick={() => {
+                navigate(`/${url}`, {
+                  state: { title, longDesc, imageurl, projectUrl },
+                });
+              }}
+              className={`${
+                option === 2 ? style2 : style1
+              }+'  w-full cursor-pointer  '`}
               key={id}
             >
-              <div className="p-4 rounded-md border  border-black flex items-center flex-row-reverse justify-evenly md:flex-col shadow-md hover:shadow-xl  transition-shadow duration-75 animate-fade-in">
+              <div className="p-4 rounded-lg  flex items-center translate-y  flex-row-reverse justify-evenly md:flex-col shadow-xl hover:shadow-lg  transition-shadow duration-75 animate-fade-in">
                 {imageurl && (
                   <div>
                     <img
@@ -36,7 +43,7 @@ const Cards = ({ option, toChangecategory }) => {
                   <p className="text-sm text-gray-500">{desc}</p>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
     </div>

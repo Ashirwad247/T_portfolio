@@ -3,7 +3,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 import { FaGithub } from "react-icons/fa";
 export const socialLinks = [
-  { id: 1, icon: <SlSocialInstagram />, url: "#", name: "Instagram" },
+  { id: 1, icon: <SlSocialInstagram />, url: "ssfdlhj", name: "Instagram" },
   {
     id: 2,
     icon: <TiSocialLinkedin />,
