@@ -43,7 +43,7 @@ const Contact = () => {
           </li>
           <li className="text-center">
             <a
-              href="src/assets/My resume v2.pdf"
+              href="/assets/My resume v2.pdf"
               className="hover:text-blue-500 flex justify-center gap-2 items-center"
               target="_blank"
             >
