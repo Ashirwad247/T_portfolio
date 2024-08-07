@@ -31,7 +31,7 @@ export const optionsArray = [
     url: "./blogs/facebook-clone/",
     category: "blogs",
     imageurl: "/assets/facebook.png",
-    projectUrl: "https://ashirwad247.github.io/Harry_Tailwind/",
+    projectUrl: "https://github.com/Ashirwad247/Harry_Tailwind",
   },
   {
     id: 4,
