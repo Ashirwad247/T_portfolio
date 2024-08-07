@@ -4,22 +4,22 @@ export const optionsArray = [
     title: "Amazon Clone",
     desc: "a mini project made with JS, html and css...",
     longDesc:
-      "I've developed a clone of Amazon using HTML, CSS, and JavaScript. The project includes animations powered by the GSAP.js library, enhancing the user experience with smooth transitions and interactive effects. To manage user data, I utilized the LocalStorage API, ensuring that user information is stored securely within the browser. You can check out the live project at ",
+      "I've developed a clone of Amazon using HTML, CSS, and JavaScript. The project includes animations powered by the GSAP.js library, enhancing the user experience with smooth transitions and interactive effects. To manage user data, I utilized the LocalStorage API, ensuring that user information is stored securely within the browser. The github repo link is  ",
     imageurl: "/assets/amz.png",
     url: "./mini-projects/amz-cln",
     category: "mini-projects",
-    projectUrl: "https://ashirwad247.github.io/Project_M/",
+    projectUrl: "https://github.com/Ashirwad247/Project_M/",
   },
   {
     id: 2,
     title: "Simple Calculator",
     longDesc:
-      "Made a simple calculator using Html, Js and Css.The live project is on ",
+      "Made a simple calculator using Html, Js and Css.The project repo link is  ",
     url: "./mini-projects/calculator",
     desc: "a mini project made with JS, html and css...",
     category: "mini-projects",
     imageurl: "/assets/calc.png",
-    projectUrl: "https://ashirwad247.github.io/JsMini/",
+    projectUrl: "https://github.com/Ashirwad247/JsMini/",
   },
 
   {
@@ -27,7 +27,7 @@ export const optionsArray = [
     title: "Facebook clone",
     desc: "a facebook clone made with tailwindcss...",
     longDesc:
-      "A Facebook clone made with TailwindCss by watching a tutorial from CodewithHarry",
+      "A Facebook clone made with TailwindCss by watching a tutorial from CodewithHarry, the Github repo link is ",
     url: "./blogs/facebook-clone/",
     category: "blogs",
     imageurl: "/assets/facebook.png",
